@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+   <meta name="theme-color" content="#7952b3">
+   <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+   </style>
+
+
+
+
+
+   <!-- Custom styles for this template -->
+   <link href="index.css" rel="stylesheet">
+
+   <link rel="stylesheet" type="text/css" href="library/font-awesome-4.3.0/css/font-awesome.min.css">
+
+   
+   <title>Home Page</title>
+</head>
+<body>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+   
+   <header>
+   <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark mb-4">
+     <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+         <img src="https://ibapi.in/images/bank.png" alt="" width="30" height="30" >
+       </a> 
+      <a class="navbar-brand" href="index.html">Citi Bank</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarCollapse">
+         <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item" style="margin-left: 50px;">
+             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+           </li>
+           <li class="nav-item" style="margin-left: 50px;">
+             <a class="nav-link active" href="Customers_list.php">Customer List</a>
+           </li>
+           <li class="nav-item" style="margin-left: 50px;">
+            <a class="nav-link active" href="remove.php">Remove Customer </a>
+          </li>
+         <li class="nav-item" style="margin-left: 50px;">
+             <a class="nav-link active" href="transaction_history.php">Transaction History</a>
+           </li>
+           <li class="nav-item" style="margin-left: 50px;">
+             <a class="nav-link active " aria-current="page" href="https://internship.thesparksfoundation.info/">Contact Us</a>
+           </li>
+           <li class="nav-item"style="margin-left: 50px;">
+            <a class="nav-link active" aria-current="page" href="https://www.thesparksfoundationsingapore.org/">About Us</a>
+          </li>
+         </ul>
+         
+       </div>
+       <div>
+
+      
+        <a href="https://www.linkedin.com/in/yash-nilapwar-51ab3b159/"><i class="fa fa-linkedin" style="color:#fff; margin-right: 10px;"></i></a>
+        <a href="#"><i class="fa fa-instagram" style="color:#fff;margin-right: 10px;"></i></a>
+        <a href="#"><i class="fa fa-twitter" style="color:#fff;margin-right: 10px;"></i></a>
+        <a href="https://github.com/yashnilapwar"><i class="fa fa-github" style="color:#fff;"></i></a>
+        </div>
+     </div>
+   </nav>
+   </header>
+   <main>
+      <section class="main-heading" id="home">
+        <div class="overlay">
+        <div class="row">
+        <div class="main-heading-content col-md-12 col-sm-12 text-center">
+          <h1><b> CITI,<br>THE LEADING GLOBAL BANK </b></h1>
+        </div>         
+        </div>     
+        </div>
+        </section>
+
+   
+    <div>
+   <!-- <div class="col-10 mx-auto col-lg-5 offset-3" style="margin-top: 20px;margin-bottom: 20px;">  -->
+    <div class="container">
+      <div class="row">
+          <div class="col-md-7">
+              <div class="content">
+                <p><h1>Consumer Businesses</h1><br>Citi's Global Consumer Bank (GCB) is a global leader in banking and wealth management, the world's largest credit card issuer and a partner of choice globally to the world's most iconic brands and digital leaders. The Global Consumer Bank serves more than 110 million clients in the U.S., Mexico and Asia, spanning 19 markets.</div>
+                  Citibank is the consumer division of financial services multinational Citigroup. Citibank was founded in 1812 as the City Bank of New York, and later became First National City Bank of New York.The bank has 2,649 branches in 19 countries, including 723 branches in the United States and 1,494 branches in Mexico operated by its subsidiary Banamex.
+                </div>
+    <div class="col-md-5">
+   <form class ="p-5 border rounded-3 bg-dark"  action="Add_Customers.php" method="post" name="form1" novalidate> 
+    <h1>REGISTER USER</h1>
+      <div class="form-floating md-3">
+         <input type="text" name="Name" class="form-control" id="floatingInput">
+         <label for="floatingInput">Customer Name</label>
+      </div><BR>
+      <div class="form-floating md-3">
+        <input type="email" name="Email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+     </div><br>
+     <div class="form-floating md-3">
+      <input type="number" name="Age" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Age</label>
+   </div><br>
+    <div class="form-floating md-3">
+      <input type="number" name="Balance" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Balance</label>
+    </div><br>
+    <br>
+    <button type="submit" name="Submit" value="Add" class="btn btn-success">Create User</button>     
+   </form>
+   </div>
+  </div>
+  
+   <div class="container marketing" style="margin-top: 20px;">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4" style="padding-left: 20px;margin-bottom: 15px;padding-right: 20px;">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://www.cardexpert.in/wp-content/uploads/2016/05/Citibank-Rewards-Credit-Card.png" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title></title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+
+        <h2>Credit Card </h2>
+        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4" style="padding-left: 20px;margin-bottom: 15px;padding-right: 20px;">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://cdn2.f-cdn.com/contestentries/1435294/31414409/5bcdbee9deccc_thumb900.jpg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title></title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+
+        <h2>Online Services</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4" style="padding-left: 20px;margin-bottom: 15px;padding-right: 20px;">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://asset20.ckassets.com/blog/wp-content/uploads/sites/5/2018/06/%5E18A657304CD35E6898E79766AB49E03D3761C2CA9CD60CC51B%5Epimgpsh_fullsize_distr.png" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+
+        <h2>Citi Help</h2>
+        <p>And lastly this, the third column of representative placeholder content.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    <!-- [ABOUT US]
+ 
+============================================================================================================================-->
+ 
+<section >
+  <!-- style=" background-color: #cbd2eb; width: 100%;height: 100%;" -->
+     
+  <div class="container">
+  <section class="main-heading1" id="home">
+  <div class="overlay">
+  <div class="row">
+  <div class="text-center">
+               
+                   
+  <h3 class="title">ABOUT <span class="themecolor">US</span></h3>
+              
+  <p class="a-slog">We believe that the customer is our first priority .</p> 
+               
+  </div>
+           
+  </div>
+           
+  <div class="gap">
+               
+           
+  </div>
+           
+           
+  <div class="row about-box">
+            
+  <div class="col-sm-4 text-center">
+              
+  <div class="margin-bottom">
+                
+  <i class="fa fa-newspaper-o"></i>
+                
+  <h4>POWER OF ENTERNET BANKING</h4>
+                
+  <p class="black">We believe that the more we share the more we learn .</p>
+              
+  </div> <!-- / margin -->
+            
+  </div> <!-- /col -->
+            
+  <div class="col-sm-4 about-line text-center">
+              
+  <div class="margin-bottom">
+                
+  <i class="fa fa-diamond"></i>
+                
+  <h4>BANKING, CAPITAL MARKETS AND ADVISORY</h4>
+                
+  <p class="black">We believe that the more we share the more we learn .</p>
+              
+  </div> <!-- / margin -->
+            
+  </div><!-- /col -->
+            
+  <div class="col-sm-4 text-center">
+              
+  <div class="margin-bottom">
+                
+  <i class="fa fa-area-chart"></i>
+                
+  <h4>community</h4>
+                
+  <p class="black">We believe that the more we share the more we learn .</p>
+              
+  </div> <!-- / margin -->
+            
+  </div><!-- /col -->
+          
+  </div> <!-- /row -->
+           
+           
+           
+      </div>         
+    </div>     
+  </div>
+</section>
+   
+</main>
+ 
+<!--sub-form-->
+<section class="sub-form text-center" id="eight" style="margin-top: 20px;">
+  
+  <div class="container">
+      <div class="col-md-12">
+          
+  <h3 class="title">Subscribe to our <span class="themecolor"> News letter</span></h3>
+              
+  <p    >We would like to inform you that if you have any of your writings which you wish to publish on our web site for free in a blog or article view, you can email to us at support@citibank.com . </p>
+      
+  </div> 
+      
+  <div class="row">
+          
+  <div class="col-md-3 col-sm-3"></div>
+        
+  <div class="col-md-6 center-block col-sm-6 ">
+          
+  <form id="mc-form">
+            
+  <div class="input-group">
+              
+  <input type="email" class="form-control" placeholder="Email Address" required id="mc-email">
+             
+  <span class="input-group-btn">
+              
+  <button type="submit" class="btn btn-outline-success">SUBSCRIBE <i class="fa fa-envelope"></i> </button>
+              
+  </span> </div>
+            
+  <label for="mc-email" id="mc-notification"></label>
+         
+  </form>
+        
+  </div>
+     
+  </div>
+    
+  </div>
+  
+  </section>
+  
+</body>      
+</html>
